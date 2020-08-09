@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>REGISTRATION FORM</title>
+   </head>
+   <body>
+       <h1>REGISTRATION FORM</h1>
+       <form>
+          FULL NAME : <input type="text" placeholder="Your answer" /><br /><br />
+          GUARDIAN : <input type="text" placeholder="Your answer" /><br /><br />
+          GENDER :
+           Male <input type="radio" value="male" name="gender" />
+           Female <input type="radio" value="female" name="gender" />
+           Other <input type="radio" value="other" name="gender" /><br /><br />
+          SALUTATION :
+           Dr. <input type="radio" value="Dr" name="salutation" />
+           Mr. <input type="radio" value="Mr" name="salutation" />
+           Mrs. <input type="radio" value="Mrs" name="salutation" />
+           Ms. <input type="radio" value="Ms" name="salutation" /><br /><br />
+          Email address :
+          <input type="email" placeholder="Your answer" required/><br /><br />
+          DISTRICT :
+          <select>
+              <option>Kasaragod</option>
+              <option>Kannur</option>
+              <option>Kozhikode</option>
+              <option>Malappuram</option>
+              <option>Wayanad</option>
+              <option>Eranakulam</option>
+              <option>Thrissur</option>
+              <option>Palakkad</option>
+              <option>Kottayam</option>
+              <option>Pathanamthitta</option>
+              <option>Alappuzha</option>
+              <option>Idukki</option>
+              <option>Kollam</option>
+              <option>Thiruvananthapuram</option>
+          </select><br /><br />
+          CONTACT NUMBER : 
+          <input type="text" placeholder="Your answer" pattern="\d{10}" title="Contact no. Should contain 10 digits" required/><br /><br />
+          <input type="submit" value="Register" />
+          <br /><br />
+        </form>
+   </body>
+</html>
