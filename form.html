@@ -1,37 +1,52 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Form</title>
   </head>
-  <body style=background-color:"#00FFFF";margin="auto">
+  <body style="margin:auto;background-color:00FFFF">
     <h1>Details of the Student</h1>
-    <form>
-      Name: <input type="text" placeholder="Your Name" /><br /><br />
+    
+    <form action="success.html">
+      Name: <input type="text" placeholder="Your Name" /> <br /><br />
+
       Gender: 
       Male: <input type="radio" value="male" name="gender" />
       Female: <input type="radio" value="female" name="gender" />
-      Other: <input type="radio" value="other" name="gender" />><br /><br />
+      Other: <input type="radio" value="other" name="gender" /> <br /><br />
+
       Date of Birth: <input type="date" /><br /><br />
-      email: <input type="email" placeholder=" Your email Address" /><br /><br />
+
+      email: <input type="email" placeholder=" Your email Address" /> <br /><br />
+
       Password: <input type="password" placeholder="Your Password" />
-      Confirm Password: <input type="password" placeholder="Your Password" /><br /><br />
-      Address: <textarea rows="5"></textarea><br /><br />
-      Programme: 
-      Computer Science: <input type="radio" value="comp" name="programme" />
-      Physics: <input type="radio" value="phy" name="programme" />
-      Chemistry: <input type="radio" value="che" name="programme" />
-      Mathematics: <input type="radio" value="mat" name="programme" />
-      Statistics: <input type="radio" value=stati" name="programme" /><br /><br />
+      Confirm Password: <input type="password" placeholder="Your Password" /> <br /><br />
+
+      Address: <textarea rows="5"></textarea> <br /><br />
+
+      Programme: <input type="text" list="programmes" />
+      <datalist id="programmes">
+        <option value="Computer Science" />
+        <option value="Physics" />
+        <option value="Chemistry" />
+        <option value="Mathematics" />
+        <option value="Statistics" />
+      </datalist> <br /><br />
+
+      University:
       <select>
         <option>Kannur University</option>
         <option>Calicut University</option>
         <option>MG University</option>
         <option>Kerala University</option>
-      </select>
+      </select> <br /><br />
+
       Languages Known:
       Malayalam: <input type="checkbox" value="mal" name="languages" />
       English: <input type="checkbox" value="eng" name="languages" />
-      Hindi: <input type="checkbox" value="hin" name="languages" />
-      <input type="submit" value="Submit" />
+      Hindi: <input type="checkbox" value="hin" name="languages" /> <br /><br />
+
+      <button type="reset"> <i>Clear"</i> </button>
+      <button type="submit"> SUBMIT </button>
     </form>
   </body>
 </html>
