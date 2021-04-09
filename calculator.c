@@ -31,7 +31,9 @@ void main()
 		case 4:
 			r=a/b;
 			printf("%f / %f = %f",a,b,r);
-			break;			
+			break;
+                default:
+                        printf("Invalid choice!!!");			
 	}
 	printf("\n");
 }	
