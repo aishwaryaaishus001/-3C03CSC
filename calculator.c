@@ -2,7 +2,7 @@
 void main()
 {
 	int c;
-	float a,b,s,d,p,q;
+	float a,b,r;
 	printf("CALCULATOR\n");
 	printf("**********\n");
 	printf("1. Addition\n");
@@ -17,20 +17,20 @@ void main()
 	switch(c)
 	{
 		case 1:
-			s=a+b;
-			printf("%f + %f = %f",a,b,s);
+			r=a+b;
+			printf("%f + %f = %f",a,b,r);
 			break;
 		case 2:
-			d=a-b;
-			printf("%f - %f = %f",a,b,d);
+			r=a-b;
+			printf("%f - %f = %f",a,b,r);
 			break;
 		case 3:
-			p=a*b;
-			printf("%f x %f = %f",a,b,p);
+			r=a*b;
+			printf("%f x %f = %f",a,b,r);
 			break;
 		case 4:
-			q=a/b;
-			printf("%f / %f = %f",a,b,q);
+			r=a/b;
+			printf("%f / %f = %f",a,b,r);
 			break;			
 	}
 	printf("\n");
